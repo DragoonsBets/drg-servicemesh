@@ -5,5 +5,5 @@
 kubectl label namespace production istio-injection=enabled
 
 helm delete --purge csvc 2>/dev/null
-helm dep up ./csvc
-helm install --name csvc ./csvc --namespace production
+helm dep up ../csvc
+helm install --name csvc ../csvc --namespace production
