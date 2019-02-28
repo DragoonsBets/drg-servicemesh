@@ -1,0 +1,6 @@
+kafka:
+  enabled: true
+#  imageTag: wurstmeister/kafka:1.0.0
+  replicas: 1
+  zookeeper:
+    enabled: true

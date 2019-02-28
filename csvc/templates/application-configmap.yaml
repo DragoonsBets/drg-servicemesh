@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: application-config
+  namespace: development
+#common configuration shared between all applications
+data:
+  application.yml: |-
+    configserver:
+      name: Consul
+      status: Connected to Consul running in Kubernetes
+    jhipster:
+      security:
+        authentication:
+          jwt:
+            base64-secret: NmY3YzJiNDJhMTc5ZGVmNzg3NjIxZGY0NTFkNTViYmQwOTY5M2M1MTc4MTllMTE0NjA0ZTg5ODU1ZWRiNDA0NzJjNzdhZWRmZWY1MzQ4M2E3NjkzMzUwMjNkODcwNjE4ZDc3Yw==
+  # app specific configuration
