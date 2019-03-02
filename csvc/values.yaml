@@ -4,3 +4,5 @@ kafka:
   replicas: 1
   zookeeper:
     enabled: true
+keycloak:
+  enabled: true

@@ -19,7 +19,6 @@ apiVersion: v1
 kind: Secret
 metadata:
   name: gossip-key
-  namespace: development
 type: Opaque
 data:
   gossip-key: SUcwRzF3N2c4QW5YMDA3cUEwWElqMTJG # a 24 chars base64 encoded string
@@ -28,7 +27,6 @@ apiVersion: v1
 kind: Service
 metadata:
   name: consul
-  namespace: development
   labels:
     app: consul
   annotations:
@@ -63,7 +61,6 @@ apiVersion: apps/v1beta1
 kind: StatefulSet
 metadata:
   name: consul
-  namespace: development
 spec:
   serviceName: consul
   replicas: 3

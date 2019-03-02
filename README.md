@@ -32,6 +32,12 @@ You can upgrade all your apps (if at all if you have made any changes to the gen
 bash helm-upgrade.sh (or) ./helm-upgrade.sh
 ```
 
+You can also do 
+```
+helm dependency build ./csvc
+helm upgrade csvc ./csvc
+```
+
 For kubernetes specific info, refer `kubernetes` sub-generator readme instructions.
 
 ### Backlogs to be covered

@@ -1,0 +1,9 @@
+dependencies:
+- name: kafka
+  repository: https://kubernetes-charts-incubator.storage.googleapis.com
+  version: 0.13.11
+- name: keycloak
+  repository: https://kubernetes-charts.storage.googleapis.com
+  version: 4.4.0
+digest: sha256:0f183b2d9cf2799358789754ad067da804bfb8d61c1618e792d0b18271447048
+generated: 2019-03-02T04:04:57.63412168-03:00

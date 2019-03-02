@@ -3,3 +3,7 @@ dependencies:
     version: ^0.11.1
     repository: https://kubernetes-charts-incubator.storage.googleapis.com
     condition: kafka.enabled
+  - name: keycloak
+    version: ^4.4.0
+    repository: https://kubernetes-charts.storage.googleapis.com
+    condition: keycloak.enabled
